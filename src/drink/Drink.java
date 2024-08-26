@@ -1,3 +1,5 @@
+package drink;
+
 public class Drink {
     String name;
     String size;

@@ -1,3 +1,5 @@
+package Role;
+
 public interface StaffRole {
     void checkIn(String time);
     void checkOut(String time);

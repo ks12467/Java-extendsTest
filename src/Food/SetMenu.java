@@ -1,3 +1,7 @@
+package Food;
+
+import drink.Drink;
+
 public class SetMenu {
     Burger buger;
     Drink drink;

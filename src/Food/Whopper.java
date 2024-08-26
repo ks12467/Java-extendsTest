@@ -1,3 +1,5 @@
+package Food;
+
 import java.util.List;
 
 public class Whopper extends Burger {
@@ -15,7 +17,7 @@ public class Whopper extends Burger {
 
 
     @Override
-    public Burger recipe()
+    public Whopper recipe()
     {    grillPatty();
         System.out.println("burnOption : " + this.bunOption);
         System.out.println("vegetable : " + this.vegetables);

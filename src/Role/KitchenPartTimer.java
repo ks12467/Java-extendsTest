@@ -1,3 +1,8 @@
+package Role;
+
+import Food.Burger;
+import drink.Drink;
+
 public class KitchenPartTimer extends CookerRole {
     String name;
     int pay;

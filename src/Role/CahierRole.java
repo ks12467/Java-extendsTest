@@ -1,9 +1,9 @@
-import javax.management.relation.Role;
-import java.util.List;
+package Role;
 
-public class CookerRole implements StaffRole {
+public class CahierRole implements StaffRole {
     private String checkInTime;
-    String checkOutTime;
+    private String checkOutTime;
+    private String orders;
 
     @Override
     public void checkIn(String time) {
@@ -27,15 +27,16 @@ public class CookerRole implements StaffRole {
     public String getCheckOut() {
         return checkOutTime;
     }
-
-    public void makeBurger() {
-        Whopper whopper = new Whopper(1, List.of("Lettuce"), List.of("Cheese"));
-        whopper.recipe();
+    //주문을 받는 메서드
+    //order에서 주문 받을 때 마다 add? 주문만? 가격까지?
+    public void order(String order, double price){
+        System.out.println("주문한 내용 : " + order + " 가격 : " + price );
     }
 
-    public void makeDrink(){
-        Drink drink = new Drink();
-        drink.Drink("콜라", "Large");
 
-    }
+
+    //계산을 하는 메서드
+
+
+
 }
